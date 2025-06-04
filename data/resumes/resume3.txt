@@ -1,0 +1,4 @@
+Name: Rohan Kapoor
+Skills: Python, Data Science, NLP
+Experience: 1.5 years
+Education: B.Tech in Data Science

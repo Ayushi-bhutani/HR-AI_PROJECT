@@ -1,0 +1,4 @@
+Name: Ayesha Sharma
+Skills: Java, React, Docker, AWS
+Experience: 3 years
+Education: B.E. in IT

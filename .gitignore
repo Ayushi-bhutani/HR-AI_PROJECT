@@ -1,0 +1,8 @@
+"venv/" 
+"*.pyc" 
+"__pycache__/" 
+".env"   # if you have environment variables
+venv/
+*.pyc
+__pycache__/
+.env

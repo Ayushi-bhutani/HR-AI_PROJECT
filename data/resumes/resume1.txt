@@ -1,0 +1,4 @@
+Name: Rahul Verma
+Skills: Python, Machine Learning, SQL
+Experience: 2 years
+Education: B.Tech in Computer Science
