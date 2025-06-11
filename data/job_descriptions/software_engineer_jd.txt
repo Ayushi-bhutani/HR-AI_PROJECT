@@ -1,6 +1,13 @@
-Position: Software Engineer
+Software Engineer Job Description
+
 Requirements:
-- At least 2 years of experience
-- Strong Python and Machine Learning skills
-- Familiarity with SQL and cloud technologies (AWS, GCP)
-- Bachelor’s degree in Computer Science or related field
+- Bachelor's degree in Computer Science or related field
+- 3+ years experience with Python, Java, or C++
+- Experience with machine learning frameworks (TensorFlow/PyTorch)
+- Knowledge of cloud platforms (AWS/Azure/GCP)
+- Strong problem-solving skills
+
+Preferred Qualifications:
+- Experience with natural language processing (NLP)
+- Familiarity with Docker/Kubernetes
+- Contributions to open-source projects

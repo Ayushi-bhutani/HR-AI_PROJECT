@@ -1,12 +1,33 @@
-from src.resume_matcher import load_resumes, load_job_description, match_resume_with_jd
+import sys
+from pathlib import Path
+import json
 
-resumes_path = "data/resumes"
-jd_path = "data/job_descriptions/software_engineer_jd.txt"
+# Add project root to path
+sys.path.append(str(Path(__file__).parent.parent))
 
-resumes = load_resumes(resumes_path)
-jd = load_job_description(jd_path)
+from src.resume_matcher import ResumeMatcher
+from src.utils import save_results
 
-for name, resume in resumes.items():
-    print(f"\n--- {name} ---")
-    result = match_resume_with_jd(resume, jd)
-    print(result)
+if __name__ == "__main__":
+    # Paths relative to project root
+    JD_PATH = "data/job_descriptions/software_engineer_jd.txt"
+    RESUME_DIR = "data/resumes"
+    OUTPUT_PATH = "results/resume_matches.csv"
+    
+    matcher = ResumeMatcher(JD_PATH)
+    results = matcher.process_resumes(RESUME_DIR)
+    
+    # Save to CSV
+    save_results(results, OUTPUT_PATH)
+    
+    # Print top results
+    print("\nTop Matching Resumes:")
+    for i, res in enumerate(results[:5], 1):
+        print(f"{i}. {res['filename']} (Score: {res['score']})")
+        print(f"   Skills: {', '.join(res['skills'][:5])}")
+        print(f"   Snippet: {res['text'][:200]}...\n")
+        # Add to print statement
+        print(f"{i}. {res['filename']} (Score: {res['score']})")
+        print(f"   Match: {'★' * int(res['score'] * 5)}")
+        
+    
