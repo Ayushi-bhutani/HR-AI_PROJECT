@@ -1,6 +1,6 @@
-text,label,score,risk
-Salary is below market average for our roles,NEGATIVE,0.99,high
-"I love working here, great team and work-life balance",POS,0.9927801489830017,medium
-Management doesn't listen to employee concerns,NEG,0.9611101746559143,medium
-Tech stack is modern and exciting to work with,POS,0.9894904494285583,medium
-"Too many meetings, not enough focus time",NEG,0.8671593070030212,medium
+text,label,score,risk,keywords
+Salary is below market average for our roles,NEGATIVE,0.99,high,['salary']
+"I love working here, great team and work-life balance",POS,0.9927801489830017,medium,[]
+Management doesn't listen to employee concerns,NEG,0.9611101746559143,medium,[]
+Tech stack is modern and exciting to work with,POS,0.9894904494285583,medium,[]
+"Too many meetings, not enough focus time",NEG,0.8671593070030212,medium,[]
